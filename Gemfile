@@ -3,10 +3,10 @@ source 'http://rubygems.org'
 gem 'guard'
 
 gem 'alchemist'
-gem 'eymiha_units'
+#gem 'eymiha_units' # no documentation, require hangs irb
 gem 'geo_units'
 gem 'm9t'
-gem 'maventhought.units'
+#gem 'maventhought.units' # why is a c# library in rubygems?
 gem 'measurement'
 gem 'quantity'
 gem 'quanty'
