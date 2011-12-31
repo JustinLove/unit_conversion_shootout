@@ -4,11 +4,11 @@ SUBJECT = 'alchemist'
 
 samples = Array.new(100) {rand}
 
-Benchmark.bm do |b|
+Benchmark.bm(40) do |b|
   b.report(SUBJECT + ' - load') { require SUBJECT }
 end
 
-Benchmark.bm(10) do |b|
+Benchmark.bm(40) do |b|
   b.report(SUBJECT + ' - conversion') do
     samples.map {|x| x.meters.to.km.to_f}
     samples.map {|x| x.km.to.meters.to_f}

@@ -4,7 +4,7 @@ SUBJECT = 'direct'
 
 samples = Array.new(100) {rand}
 
-Benchmark.bm(10) do |b|
+Benchmark.bm(40) do |b|
   b.report(SUBJECT + ' - conversion') do
     samples.map {|x| x * 1000}
     samples.map {|x| x / 1000}
