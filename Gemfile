@@ -19,4 +19,4 @@ gem 'stick'
 gem 'units'
 gem 'units-system'
 gem 'uom'
-gem 'vanunits'
+#gem 'vanunits' # may be an older version of stick.  Seems to be using 1.8 relative loading internally, so I can't get it to run.
