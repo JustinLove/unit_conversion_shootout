@@ -6,9 +6,6 @@ samples = Array.new(100) {rand}
 
 Benchmark.bm(40) do |b|
   b.report(SUBJECT + ' - load') { require SUBJECT }
-end
-
-Benchmark.bm(40) do |b|
   b.report(SUBJECT + ' - conversion') do
     samples.map {|x| Length.new(x).in_km }
     samples.map {|x| Length.new(x, :km).to_f }

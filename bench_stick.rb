@@ -12,9 +12,6 @@ Benchmark.bm(40) do |b|
       include Stick::Units
     end
   end
-end
-
-Benchmark.bm(40) do |b|
   b.report(SUBJECT + ' - conversion') do
     samples.map {|x| x.meters.to(U.km).value}
     samples.map {|x| x.km.to(U.meters).value}
