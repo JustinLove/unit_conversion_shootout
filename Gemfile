@@ -10,8 +10,8 @@ gem 'm9t'
 gem 'measure'
 gem 'measurement'
 gem 'quantity'
-gem 'quanty'
-gem 'richunits'
+#gem 'quanty' # raises exception on require
+#gem 'richunits' # only time and bytes, not useful to me
 gem 'ruby-units'
 gem 'ruby-units-brewpoo'
 gem 'simple-measures'
