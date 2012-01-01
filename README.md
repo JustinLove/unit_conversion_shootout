@@ -20,31 +20,20 @@ My application was rankingobjects retrieved from a bunch of different sources.  
 
 ## The results on my machine:
 
-The library load time is also tested, more as a tie-breaker than a primary concern.  All of the libraries are tested in separate files because many of them make similar extensions to `Numeric`.
+The library load time is also tested, more as a tie-breaker than a primary concern.  All of the libraries are tested in separate files because many of them make similar extensions to `Numeric`.  Times are in seconds, provide by the standard Benchmark library.
 
-    alchemist - load                   0.110788
-    alchemist - conversion             0.449174
-    ./brute - load                     0.000659
-    ./brute - conversion               0.000123
-    direct - conversion                0.000111
-    geo_units - load                   0.143500
-    geo_units - conversion             0.091413
-    m9t - load                         0.206981
-    m9t - conversion                   0.000713
-    measure/length - load              0.144750
-    measure/length - conversion        0.008206
-    measurement/length - load          0.133140
-    measurement/length - conversion    0.013005
-    quantity/all - load                0.155692
-    quantity/all - conversion          0.006318
-    ruby-units - load                  0.289221
-    ruby-units - conversion            0.239024
-    stick/units - load                 0.278137
-    stick/units - conversion           0.065487
-    units-system - load                0.196454
-    units-system - conversion          0.054632
-    units/standard - load              0.113290
-    units/standard - conversion        0.151823
-    uom - load                         0.257610
-    uom - conversion                   0.056836
+                           convert        load
+    alchemist             0.449174    0.110788
+    ./brute               0.000123    0.000659
+    direct                0.000111
+    geo_units             0.091413    0.143500
+    m9t                   0.000713    0.206981
+    measure/length        0.008206    0.144750
+    measurement/length    0.013005    0.133140
+    quantity/all          0.006318    0.155692
+    ruby-units            0.239024    0.289221
+    stick/units           0.065487    0.278137
+    units-system          0.054632    0.196454
+    units/standard        0.151823    0.113290
+    uom                   0.056836    0.257610
 
